@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*------------------------ nav bar start --------------------- */
+
+body {
+    background-color: black;
+}
+
+nav{
+    background-color: black;
+    box-shadow: 0 0 4px white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+} 
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.main-div {
+    justify-content: space-between;
+}
+
+.main-div a img {
+    width: 6rem;
+}
+
+.main-div a img:hover{
+    cursor: pointer;
+}
+
+.main-div .nav-links ul{
+    display: flex;
+}
+
+.main-div .nav-links ul li {
+    list-style-type: none;
+    margin-left: 1.5rem;
+    color: white;
+}
+
+.blue{
+    color: blueviolet;
+}
+
+.main-div .nav-links ul li.active{
+    color: red;
+}
+
+.main-div .nav-links ul li:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.main-div .search-bar input {
+    height: 2.2rem;
+    width: 13rem;
+    padding-left: .5rem;
+    border: .2rem solid blueviolet;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.main-div .search-bar button {
+    height: 2.2rem;
+    width: 5rem;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+
+/*------------------------ nav bar end --------------------- */
+
+/*------------------------ Main start --------------------- */
+
+main {
+    margin-top: 10rem;
+}
+
+main .card-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+main .card-container .card {
+    background-color: white;
+    width: 22rem;
+    border: .3rem solid blueviolet;
+    overflow: hidden;
+}
+
+main .card-container .card:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+main .card-container .card .card-header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .card-container .card .card-content h3,
+main .card-container .card .card-content h6,
+main .card-container .card .card-content p {
+    padding: .5rem;
+}

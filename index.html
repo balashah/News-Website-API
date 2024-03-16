@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>News Website</title>
+        <link rel="stylesheet" href="assests/css/index.css">
+    </head>
+    <body>
+        
+        <!------------------- nav bar start ------------------>
+
+        <nav>
+            <div class="main-div container flex">
+                <a href="#">
+                    <img id="pakistan" onclick="onNavItemClick('pakistan')" src="assests/images/news-img.webp" alt="">
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li id="psl" onclick="onNavItemClick('psl')">PSL</li>
+                        <li id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                        <li id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                        <li id="technology" onclick="onNavItemClick('technology')" class="blue">technology</li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <input id="search-text" type="text" placeholder="Search Here....">
+                    <button id="search-button">Search</button>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------- nav bar end ------------------>
+
+        <!------------------- Main Body start ------------------>
+        <main>
+            <div class="card-container container flex" id="card-container">
+                
+            </div>
+        </main>
+
+        <template id="template">
+            <div class="card">
+                <div class="card-header">
+                    <img id="news-image" src="https://via.placeholder.com/400x200" alt="news image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title" >This is title</h3>
+                    <h6 id="news-source">End Gadet 26/08/2024</h6>
+                    <p id="news-desc">Find & Download Free Graphic Resources for News Logo. 99000+ Vectors, Stock Photos & PSD files. ✓ Free for commercial use ✓ High Quality Images.</p>
+                </div>
+            </div>
+        </template>
+        <!-------------------- Main Body End ------------------>
+
+        <script src="assests/script/script.js"></script>
+    </body>
+</html>
